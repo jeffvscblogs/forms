@@ -6,6 +6,8 @@
     <title>Auth Page</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-auth-compat.js"></script>
 </head>
 <body>
     <div class="gradient-bg"></div>
@@ -24,6 +26,9 @@
                 <div class="input-group">
                     <input type="password" required>
                     <label>Password</label>
+                </div>
+                <div class="forgot-password">
+                    <a id="forgotPasswordLink">Forgot Password?</a>
                 </div>
                 <button type="submit" class="btn">Login</button>
             </form>
