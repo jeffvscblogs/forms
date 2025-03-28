@@ -123,3 +123,14 @@ body {
 .hidden {
     display: none;
 }
+
+.forgot-password{
+    color: rgba(255,255,255,0.6);
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.3s;
+    display: block;
+    text-align: right;
+    margin: -10px 0 15px;
+    cursor: pointer;
+}
