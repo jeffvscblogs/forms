@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
             .then(() => {
                 alert('Account created successfully! Welcome, ' + username + '!');
                 // Redirect to dashboard or another page
-                window.location.href = 'https://inkoradev.github.io/meowx/beryl.html';
+                window.location.href = 'https://inkoradev.github.io/beryl/';
             })
             .catch((error) => {
                 let errorMessage = error.message;
@@ -145,7 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // User is signed in
             console.log('User is logged in:', user);
             // You can redirect here if you want
-            window.location.href = 'https://inkoradev.github.io/meowx/beryl.html';
+            window.location.href = 'https://inkoradev.github.io/beryl/';
         } else {
             // User is signed out
             console.log('User is logged out');
