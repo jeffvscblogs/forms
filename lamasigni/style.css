@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
+}
+
+body {
+    background: #000;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.gradient-bg {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(98,76,244,0.5) 0%, rgba(98,76,244,0) 70%);
+    filter: blur(80px);
+    pointer-events: none;
+    opacity: 0.5;
+    transition: 0.2s all;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form-wrapper {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px;
+    width: 400px;
+    transition: 0.3s all;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.form-wrapper:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+.form-header {
+    display: flex;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.form-header h2 {
+    color: #fff;
+    font-weight: 500;
+    margin-right: 30px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.form-header h2.active {
+    opacity: 1;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 15px 0;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    outline: none;
+    background: transparent;
+    transition: 0.3s;
+}
+
+.input-group label {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    font-size: 16px;
+    color: rgba(255,255,255,0.5);
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.input-group input:focus ~ label,
+.input-group input:valid ~ label {
+    top: -10px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.input-group input:focus,
+.input-group input:valid {
+    border-bottom-color: rgba(255,255,255,0.5);
+}
+
+.btn {
+    width: 100%;
+    padding: 15px;
+    background: rgba(255,255,255,0.1);
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+.hidden {
+    display: none;
+}
