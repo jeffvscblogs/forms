@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Signed in
                 alert('Login successful!');
                 // Redirect to dashboard or another page
-                // window.location.href = 'dashboard.html';
+                window.location.href = 'https://inkoradev.github.io/beryl/';
             })
             .catch((error) => {
                 let errorMessage = error.message;
